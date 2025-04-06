@@ -1,0 +1,23 @@
+{%extends "layout.html" %}
+{% block message %}
+
+  <div class="hire">
+    <h2>اكتب رساله كل يوم لفلسطين</h2>
+    <!-- checkout formspree.io for easy form setup -->
+    <form class="work-request" action="/send_message" method="POST">
+    
+      
+      <div class="work-request--information">
+        <div class="information-name">
+      
+          <input id="message" type="text" name="message">
+          <label for="message"></label>
+        </div>
+        
+      </div>
+      <input type="submit" value="ارسل رسالتك">
+    </form>
+  </div>
+  
+
+{% endblock message %}
